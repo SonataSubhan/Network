@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.form1 {
+    width: 150px;
+}
+
+P {
+    margin: 3px;
+    font-size: 8px;
+
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.form2 {
+    width: 150px;
+    margin-left: 20px;
+}
+
+.form3 {
+    width: 150px;
+    margin-left: 20px;
+}
+
+hr {
+    margin: 0;
+    padding: 0;
+}
+
+.form4 {
+    width: 150px;
+    margin-left: 20px;
+}

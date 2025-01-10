@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form1">
+        <p style="font-size: 10px;">OSI and TCP/IP Models</p>
+        <p style="font-size: 8px;">OSI framework standardizes communication processes between networked systems.</p>
+        <p style="font-size: 8px;">The 7 Layers of the OSI</p>
+        <p>1)<b>Physical Layer:</b> Transfers raw data (bits) over physical mediums (Ethernet, Wi-Fi).</p>
+        <p>2) <b>Data Link Layer:</b> Handles MAC addresses and error detection (Switches, ARP).</p>
+        <p>3)<b>Network Layer:</b> Manages IP addressing and routing (IP, Routers).</p>
+        <p>4)<b>Transport Layer:</b> Ensures reliable (TCP) or fast (UDP) data delivery (TCP, UDP).</p>
+        <p>5)<b>Session Layer:</b> Establishes and maintains communication sessions (NetBIOS, RPC).</p>
+        <p>6)<b>Presentation Layer:</b> Formats data for the application layer (SSL, JPEG).</p>
+        <p>7)<b>Application Layer:</b> Interfaces directly with users via PROTOCOLS (HTTP, FTP, DNS).</p>
+        <p style="font-size: 8px;">The TCP/IP Model is a practical 4-layer framework for internet PROTOCOLS and
+            real-world networking.</p>
+        <p>1)<b>Link Layer:</b> Combines OSI's Physical and Data Link layers for hardware communication (Ethernet,
+            Wi-Fi).
+        </p>
+        <p>2)<b>Internet Layer:</b> Handles logical addressing and routing (IP, ICMP).</p>
+        <p>3)<b>Transport Layer:</b> Ensures data delivery using TCP/UDP (TCP, UDP)</p>
+        <p>4)<b>Application Layer:</b> Includes PROTOCOLS for user applications (HTTP, FTP, DNS).</p>
+        <hr>
+        <p style="font-size: 8px;
+        font-weight: bold;">EXAMPLE Calculation: IP 192.168.1.0/24</p>
+        <p>1)<b>IP Address Length</b>-(Number of bits in an IPv4 address (32 bits))</p>
+        <p>2)<b>Subnet mask</b>-Bits for network and host. /x</p>
+        <p>3)<b>Block-size</b>-Total addresses in the subnet.2^(32 - subnet mask)</p>
+        <p>4)<b>NetworkID</b>-first adress in the block(192.168.1.0/24)</p>
+        <p>5)<b>BroadCastID</b>-Last address in the block(192.168.1.255)</p>
+        <p>6)<b>FirstUsableId</b>-First valid IP for devices(NetworkID+1)192.168.1.1</p>
+        <p>7)<b>LastUsableID</b>-LastvalidIP for devices(Broadcast ID - 1)192.168.1.254</p>
+        <p>8)<b>IP Address Classes</b>(Divides IP)(Class C: 192.0.0.0 – 223.255.255.0)</p>
+        <p>9)<b>Private IP Ranges</b>(Reserved IPs)(192.168.x.x, 10.x.x.x )</p>
+
+    </div>
+    <div class="form2">
+
+        <p style="font-size: 10px;">Mac Adress</p>
+        <p>A MAC address is a unique 48-bit (6-byte) identifier for a device's NIC, used for LAN communication.
+            Displayed in hexadecimal (e.g., 00:1A:2B:3C:4D:5E), it ensures data reaches the correct device.</p>
+        <p>MAC Address Components:</p>
+        <p>1)<b>OUI (Organizationally Unique Identifier)</b>
+            First 24 bits (e.g., 00:1A:2B), assigned to the manufacturer by IEEE
+        </p>
+        <p>2)<b>Device Identifier(vendor specific)</b>
+            Last 24 bits (e.g., 3C:4D:5E), uniquely identifies the device.</p>
+        <hr>
+        <p style="font-size: 10px;">Topologies</p>
+        <p>1)<b>Bus. </b>.
+            DESCRIPTION: Devices share a single cable; data travels in both directions.
+            PROTOCOLS: Ethernet, CSMA/CD;
+            EXAMPLE: Early Ethernet networks.
+        </p>
+        <p>2)<b>Star. </b>
+            DESCRIPTION: Devices connect to a central hub or switch; easy to troubleshoot.
+            PROTOCOLS: Ethernet, Wi-Fi, TCP/IP;
+            EXAMPLE: Home or office networks.
+        </p>
+        <p>3)<b>Ring. </b>
+            DESCRIPTION: Devices are arranged in a circular loop; data flows in one or both directions.
+            PROTOCOLS: Token Ring, FDDI;
+            EXAMPLE: FDDI (Fiber Distributed Data Interface).
+        </p>
+        <p>4)<b>Mesh. </b>
+            DESCRIPTION:Devices interconnect directly, ensuring redundancy and reliability.
+            PROTOCOLS: OSPF, BGP;
+            EXAMPLE: Internet backbone networks.
+        </p>
+        <p>5)<b>Tree. </b>
+            DESCRIPTION: Hierarchical combination of star and bus topologies; scalable for large setups.
+            PROTOCOLS: Ethernet, TCP/IP;
+            EXAMPLE: Corporate networks..
+        </p>
+        <p>6)<b>Hybrid. </b>
+            DESCRIPTION: Combines multiple topology types for flexibility.
+            PROTOCOLS:Varies (depends on used topologies);
+            EXAMPLE: WANs in organizations.
+        </p>
+        <p>7)<b>Point-to-Point </b>
+            DESCRIPTION: Direct connection between two devices.
+            PROTOCOLS: PPP, HDLC;
+            EXAMPLE: Phone line communication.
+        </p>
+        <hr>
+        <b>
+            <p>Telnet, SSH, DNS, HTTP Port Numbers</p>
+        </b>
+        <p>Telnet-Remote access to devices-23</p>
+        <p>SSH-Secure remote access to devices-22</p>
+        <p>Resolves domain names to IPs-53</p>
+        <p>HTTP-Transfers web pages-80</p>
+        <hr>
+    </div>
+    <div class="form3">
+        <p style="font-size: 10px;">TCP vs UDP: Key Differences</p>
+        <p>1)<b>Connections-</b><br>
+            <b>TCP: </b>Connection-oriented (establishes a session). <br>
+            <b>UDP: </b>Connectionless (no session established).
+        </p>
+        <p>2)<b>Reliability-</b><br>
+            <b>TCP: </b>Ensures reliable data delivery with error checking. <br>
+            <b>UDP: </b>No guarantee of delivery or error checking.
+        </p>
+        <p>3)<b>Speed-</b><br>
+            <b>TCP: </b>Slower due to reliability mechanisms. <br>
+            <b>UDP: </b>Faster as it skips reliability checks.
+        </p>
+        <p>4)<b>Use Cases-</b><br>
+            <b>TCP: </b>File transfer, web browsing (e.g., HTTP, FTP). <br>
+            <b>UDP: </b>Streaming, gaming, VoIP (e.g., DNS, RTP).
+        </p>
+        <p>5)<b>Header Size -</b><br>
+            <b>TCP: </b>Larger (20 bytes). <br>
+            <b>UDP: </b>Smaller (8 bytes).
+        </p>
+        <hr>
+        <p style="font-size: 10px;">VLAN and Broadcast Domain</p>
+        <p><b>VLAN-</b>Logical network segmentation to isolate traffic and improve security.</p>
+        <p><b>Broadcast Domain-</b>VLANs limit the area where broadcast packets are sent and received.</p>
+        <p><b>VLAN Ranges-</b>- Normal: 1–1005 | Extended: 1006–4094</p>
+        <p><b>Default VLAN-</b>VLAN 1 (default for all ports).</p>
+        <p><b>Native VLAN-</b>Handles untagged traffic on trunk ports (default is VLAN 1 but can be changed).</p>
+        <hr>
+        <p style="font-size: 10px;">VLAN Configuration Commands</p>
+        <p> <b>Create a VLAN- </b> vlan < VLAN_ID>
+        </p>
+        <p><b>Name a VLAN-</b> vlan < VLAN_NAME>
+        </p>
+        <p><b>Assign VLAN to an interface-</b> interface < INTERFACE>,
+                switchport mode access,
+                switchport access vlan < VLAN_ID>,
+        </p>
+        <p><b>Show VLANs- </b>show vlan brief</p>
+        <p><b>Delete a VLAN- </b>no vlan < VLAN_ID></>
+        </p>
+        <hr>
+        <p style="font-size: 10px;">Switch and Router Modes</p>
+        <p><b>User EXEC Mode(Limited commands for basic monitoring.): </b>Switch> or Router></p>
+        <p><b>Privileged EXEC Mode(Full access to view and manage configuration.) </b>Switch# or Router#</p>
+        <p><b>Global Config Mode </b>Switch(config)#</p>
+        <p><b>Interface Config Mode </b>Switch(config-if)#</p>
+
+
+    </div>
+    <div class="form4">
+        <p style="font-size: 10px;">
+            Switch Interface Configuration Mode Commands</p>
+        <p><b>Enter Interface Config Mode- </b>interface < INTERFACE>
+        </p>
+        <p><b>Set Port as Access Mode-</b> switchport mode access</p>
+        <p><b>Assign VLAN to Port-</b>switchport access vlan < VLAN_ID>
+        </p>
+        <p><b>Set Port as Trunk Mode-</b>switchport mode trunk</p>
+        <p><b>Set Native VLAN on Trunk- </b>switchport trunk native vlan < VLAN_ID>
+        </p>
+        <p><b>Enable Port-</b>no shutdown</p>
+        <p><b>Disable Port-</b>shutdown</p>
+        <p><b>Show Interface Config- </b>show running-config interface < INTERFACE>
+        </p>
+        <p><b>EXAMPLE:</b>interface FastEthernet0/1;
+            switchport mode access;
+            switchport access vlan 10;
+            no shutdown;</p>
+        <hr>
+        <p style="font-size: 10px;">Configuration Commands for Inter-VLAN Routing</p>
+        <p><b>Enable Routing on the Router: </b>interface < router_interface>
+                no shutdown</p>
+        <p><b>Create Subinterfaces for VLANs: </b> interface < router_interface>.< VLAN_ID>
+                    encapsulation dot1Q < VLAN_ID>
+                        ip address < IP_ADDRESS>
+                            < SUBNET_MASK>
+        </p>
+        <p><b>Example for VLAN 10: </b> interface GigabitEthernet0/0.10
+            encapsulation dot1Q 10
+            ip address 192.168.10.1 255.255.255.0</p>
+        <p><b>Option 2: Layer 3 Switch </b></p>
+        <p><b>Enable IP Routing:</b>ip routing</p>
+        <p><b>Create VLAN Interfaces (SVIs): </b>interface vlan < VLAN_ID>
+                ip address < IP_ADDRESS>
+                    < SUBNET_MASK>
+                        no shutdown</p>
+        <p><b>Verification Commands: </b>Check VLANs: show vlan brief</p>
+        <p><b>Verify Routing: </b>show ip route</p>
+        <p><b>Test Connectivity: </b>ping < IP_ADDRESS>
+        </p>
+        <hr>
+        <p style="font-size: 10px;">Static Route Types and Configuration Commands
+        </p>
+        <p><b>Static Route Types: </b>
+            1)Directly Connected <b>ip route 192.168.2.0 255.255.255.0
+                GigabitEthernet0/0</b></p>
+        <p>Fully Specified <b>ip route 192.168.2.0 255.255.255.0
+                GigabitEthernet0/0 192.168.1.1</b></p>
+        <p>Floating <b>ip route 192.168.2.0 255.255.255.0 192.168.1.1
+                200.</b></p>
+    </div>
+</body>
+
+</html>
